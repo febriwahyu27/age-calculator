@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 94%);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+main .box{
+    width: 45%;
+    padding: 25px 30px;
+    border-radius: 15px;
+    border-bottom-right-radius: 120px;
+    box-sizing: border-box;
+    background-color: white;
+}
+main .box form{
+    display: flex;
+    justify-content: space-between;
+}
+main .box form .form-label{
+    display: flex;
+    flex-direction: column;
+}
+main .box form .form-label p{
+    display: none;
+    font-size: 10px;
+    margin: 8px 0 0 0;
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+}
+main .box form .form-label label{
+    color: hsl(0, 1%, 44%);
+}
+main .box form .form-label input{
+    padding: 10px 15px;
+    width: 65%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin: 8px 0 0 0;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+main .box hr{
+    margin: 28px 0;
+    color: hsl(0, 0%, 86%);
+}
+
+main .box img{
+    float: right;
+    border-radius: 30px;
+    padding: 5px 5px;
+    background-color: hsl(259, 100%, 65%);
+    border: 1px solid hsl(259, 100%, 65%);
+}
+main .box button:hover{
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid black;
+}
+
+main .box h1{
+    font-size: 4em;
+    font-weight: 900;
+    font-style: italic;
+    color: hsl(0, 0%, 8%);
+    font-family: 'Poppins', sans-serif;
+}
+main .box .number{
+    color: hsl(259, 100%, 65%);
+}
+
+footer{
+    padding: 10px 0;
+    background-color: hsl(259, 100%, 65%);
+}
+footer .attribution  a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 950px){
+    main .box{
+        width: 90%;
+        padding: 25px 30px;
+        border-radius: 15px;
+        border-bottom-right-radius: 100px;
+        box-sizing: border-box;
+        background-color: white;
+    }
+    main .box form{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 20px 0;
+    }
+    main .box form .form-label input{
+        padding: 10px 15px;
+        width: 85%;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        margin: 8px 0 0 0;
+        border-radius: 10px;
+        border: 1px solid hsl(0, 0%, 86%);
+    }
+    main .box form .form-label p{
+        display: none;
+        font-size: 7px;
+        margin: 8px 0 0 0;
+        color: hsl(0, 100%, 67%);
+        font-style: italic;
+        font-weight: 100;
+        font-family: 'Poppins', sans-serif;
+    }
+    main .box img{
+        position: absolute;
+        left: 42%;
+        margin: 10px 0;
+        float: none;
+        border-radius: 30px;
+        padding: 5px 5px;
+        background-color: hsl(259, 100%, 65%);
+        border: 1px solid hsl(259, 100%, 65%);
+    }
+    main .box hr{
+        margin: 58px 0;
+        color: hsl(0, 0%, 86%);
+    }
+    main .box h1{
+        font-size: 3em;
+        font-weight: 900;
+        font-style: italic;
+        color: hsl(0, 0%, 8%);
+        font-family: 'Poppins', sans-serif;
+    }
+}
